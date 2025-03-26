@@ -15,4 +15,19 @@
             <column name="next_val" type="BIGINT"/>
         </createTable>
     </changeSet>
+
+    <changeSet author="JT" id="1677335672894-3">
+        <createTable tableName="author">
+            <column name="id" type="BIGINT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="JT" id="1677335672894-4">
+        <createTable tableName="author_seq">
+            <column name="next_val" type="BIGINT"/>
+        </createTable>
+    </changeSet>
 </databaseChangeLog>
